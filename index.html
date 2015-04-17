@@ -3,27 +3,68 @@
 <head>
 
 <style>
+
+html, body {
+  height:100%;
+}
+
+
 #avatar {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 20px;
 	width:200px;
 	height:200px;
+}
+
+#mast {
+   height:100px;
+   background-color:black;
+   width:100%;
+}
+
+#navbar {
+   width:220px;
+   background-color:red;
+   min-height:100%;
+   display:flex;
+   flex-direction:column;
+}
+
+
+.items {
+    position:relative;
+	top: 180px;
+}
+
+.item {
+	text-align:left;
+	margin-left:30px;
+	font-size:20px;
+	font-type:Arial;
+	padding:3px;
 }
 </style>
 
 </head>
 <body>
 
-<div id="container">
 	<div id="mast">
 			<img id="avatar" src="http://www.gravatar.com/avatar/b4b933d545157c6cbce4ab2b9d6c0847.png">
 	</div>
-	<div id="navbar">
-	</div>
+	<section id="navbar">
+		<dl class='items'>
+		<dd class='item' >About</dd>
+		<dd class='item' >Blog</dd>
+		<dd class='item' >Github</dd>
+		<dd class='item' >Twitter</dd>
+		<dd class='item' >Keybase</dd>
+		<dd class='item' >LinkedIn</dd>
+		</dl>
+	</section>
 	<div id="content">
 	</div>
-</div>
+
 
 
 </body>
